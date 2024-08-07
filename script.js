@@ -40,3 +40,8 @@ document.addEventListener("keydown",function(e){
         layOut.classList.replace("d-flex" , "d-none");
     }
 });
+layOut.addEventListener("click", function(e) {
+    if (!document.querySelector(".imgLayOut").contains(e.target)) {
+        layOut.classList.replace("d-flex", "d-none");
+    }
+});
